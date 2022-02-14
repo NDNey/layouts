@@ -1,0 +1,555 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+body {
+  font-size: 12px;
+  /* background-color: bisque; */
+  /* line-height: 1.4; */
+  font-family: Helvetica, Arial, sans-serif;
+}
+* {
+  font-family: "Besley", serif;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+
+.logIn {
+  /* width: 100%; */
+  display: flex;
+  border-top: 1px solid rgb(234, 234, 234);
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+.logIn section * {
+  margin: 10px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+}
+
+.logIn section {
+  width: 50%;
+}
+
+.logIn section + section {
+  /* border:  1px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logIn section button {
+  color: white;
+  background-color: rgb(98, 136, 165);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px;
+  padding: 0 20px;
+}
+
+.nyt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+.nyt ul {
+  border-left: 1px solid rgb(234, 234, 234);
+  border-right: 1px solid rgb(234, 234, 234);
+  border-top: 1px solid rgb(234, 234, 234);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20%;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0 0 0;
+  margin: -23px 0;
+  z-index: 1;
+  background-color: white;
+  min-width: 260px;
+}
+
+.nyt li a {
+  color: rgb(131, 131, 131);
+}
+
+.nyt img {
+  width: 50%;
+  margin: 20px 0 0 0;
+}
+
+.nyt img + ul {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 15px;
+}
+
+.nyt img + ul li a {
+  border-left: 1px solid rgb(51, 51, 51);
+  padding: 0 10px;
+  margin: 0 10px;
+}
+nav {
+  margin: 40px 0;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(234, 234, 234);
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav a {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+}
+main p {
+  font-size: 14px;
+}
+main ul {
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+main img {
+  width: 10%;
+}
+
+.asideLeft {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  padding: 0 20px;
+}
+.asideLeft h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(204, 204, 204);
+  width: 90%;
+}
+.asideLeft h1,
+.asideLeft h4 {
+  font-size: 28px;
+  margin: 0;
+  font-style: italic;
+}
+.asideLeft h6 {
+  margin: 5px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: rgb(204, 204, 204);
+  font-weight: lighter;
+}
+time {
+  color: rgb(194, 45, 30);
+}
+.asideLeft span {
+  margin: 5px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: lighter;
+}
+
+.middleMain {
+  /* border: 1px solid green; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+.video section {
+  height: 300px;
+  background-image: url(https://static01.nyt.com/images/2017/01/11/us/12TRUMP5-hp/12TRUMP5-hp-videoSixteenByNine1050-v5.jpg);
+  background-size: 100% 100%;
+  /* border: 1px solid magenta; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: white;
+}
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video span {
+  color: rgb(204, 204, 204);
+  margin: 5px 0;
+}
+
+.video a {
+  display: flex;
+  justify-content: flex-start;
+  width: 20%;
+  color: white;
+  margin: 0 0 40px 20px;
+}
+
+.video h2 {
+  font-size: 30px;
+  width: 70%;
+  margin: 20px 0;
+}
+.video i {
+  font-size: 60px;
+}
+
+.mainMid h3 {
+  /* text-align: center; */
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+.mainMid ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+.mainMid a {
+  color: black;
+  border-left: 2px solid rgb(204, 204, 204);
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.middleMain div {
+  border-bottom: 1.5px solid rgb(204, 204, 204);
+  margin: 20px 0;
+  width: 45%;
+}
+
+span {
+  color: rgb(204, 204, 204);
+  font-size: 14px;
+  margin: 0;
+}
+.mainBottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mainBottom h3 {
+  font-size: 17px;
+  margin: 5px 0;
+}
+.mainBottom p {
+  width: 75%;
+}
+.mainBottom img {
+  width: 20%;
+  height: 90px;
+  margin: 15px 5px;
+}
+
+.mainBottom img + span {
+  color: rgb(53, 105, 141);
+  margin: -20px 0 0 0;
+}
+.mainBottom h6 {
+  font-size: 17px;
+}
+
+.asideRigth {
+  /* border: 1px solid blue; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+.asideRigth h4 {
+  font-size: 17px;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.otherNews {
+  display: flex;
+  flex-direction: row;
+}
+.otherNews section {
+  width: 50%;
+  border-right: 1px solid rgb(204, 204, 204);
+  padding: 5px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.otherNews p {
+  width: 80%;
+}
+.otherNews img {
+  width: 20%;
+  height: 40px;
+  margin: 20px 0;
+}
+.otherNews h5 {
+  font-size: 20px;
+  margin: 5px 0;
+  width: 100%;
+}
+.otherNews li {
+  font-weight: bold;
+}
+
+.crosword {
+  display: flex;
+  flex-direction: row;
+  border-bottom: px solid rgb(204, 204, 204);
+  border-top: 4px double rgb(204, 204, 204);
+  margin: 10px;
+  padding: 10px 0;
+}
+.crosword section {
+  width: 50%;
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.crosword span {
+  color: black;
+  text-transform: uppercase;
+}
+
+.crosword section h6 {
+  font-size: 14px;
+  margin: 5px 0;
+  width: 70%;
+}
+
+.crosword img {
+  width: 30%;
+  height: 80px;
+}
+
+.asideRigthBottom section {
+  display: flex;
+  flex-flow: wrap row;
+  border-top: 1px solid rgb(204, 204, 204);
+  margin: 10px;
+}
+
+.asideRigthBottom span {
+  width: 10%;
+  margin: 15px 0;
+}
+.asideRigthBottom p {
+  width: 70%;
+}
+
+.asideRigthBottom img {
+  width: 20%;
+  height: 90px;
+  margin: 20px 0;
+  padding: 0 0 0 10px;
+}
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+@media only screen and (max-width: 1165px) {
+  .nyt img + ul {
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-evenly;
+  }
+  nav {
+    width: 100%;
+  }
+  .video h2 {
+    font-size: 1.5rem;
+    padding: 0 0 0 30px;
+  }
+
+  nav ul li:nth-child(2n + 3) a {
+    display: none;
+  }
+
+  .logIn section button {
+    margin: 5px;
+    padding: 0 4px;
+  }
+
+  .mainMid ul {
+    flex-direction: column;
+    list-style: circle;
+  }
+  .mainMid a {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  main {
+    flex-wrap: wrap;
+  }
+  .asideLeft {
+    width: 30%;
+  }
+
+  .middleMain {
+    width: 70%;
+  }
+
+  .asideRigth {
+    width: 100%;
+  }
+  .mainMid ul {
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .mainMid a {
+    border-left: 2px solid rgb(204, 204, 204);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .asideLeft {
+    width: 100%;
+  }
+
+  .middleMain {
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nyt img + ul li:nth-child(2n + 3) a {
+    display: none;
+  }
+
+  .nyt img + ul {
+    z-index: 0;
+    margin: 4px 0;
+  }
+
+  .nyt img {
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .nyt img + ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nyt img {
+    /* margin: 50px; */
+    width: 90%;
+    margin: 0;
+  }
+  .logIn .fa-cog {
+    display: none;
+  }
+  .nyt ul {
+    margin: 0;
+  }
+  .nyt img + ul li:nth-child(n + 2) a {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  .mainBottom img + span {
+    margin: 10px 0;
+  }
+  .otherNews {
+    flex-direction: column;
+  }
+
+  .otherNews section {
+    width: 100%;
+    border-top: 1px solid rgb(204, 204, 204);
+  }
+
+  .mainMid ul {
+    flex-direction: column;
+    list-style: circle;
+  }
+  .mainMid a {
+    border: none;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .logIn section {
+    width: 70%;
+  }
+  .logIn section + section {
+    width: 30%;
+  }
+  .crosword img {
+    width: 80%;
+  }
+
+  .mainBottom img,
+  .otherNews img,
+  .asideRigthBottom img {
+    width: 80%;
+    height: 200px;
+  }
+}
