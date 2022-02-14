@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="GoogleFrondpage" content="This is google front page made with HTMl,CSS and JavaScript">
+    	<meta name="keywords" content="one, two, three">
+
+        <title>Search</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="pages">
+                <input type="text" id="name" placeholder="Name Your Browser">
+                <input type="submit" value="Change"  id="changer">
+                <a href="searchImage.html">Image</a>
+                <a href="advance.html">Advanced Search</a>
+            </section>
+        </header>
+        <section class="container">
+            <section class="logo">
+                <h1 id="title"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></h1> 
+            </section>
+            <form id="searchForm" action="https://google.com/search">
+                <section class="bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="q">
+                </section>
+                <section class="buttons">
+                    <input type="submit" value="Google Search" form="searchForm" >
+                    <input type="submit" name="btnI" value="I'm Feeling Lucky" form="searchForm" >
+                </section>
+            </form>
+        </section>
+    
+       <script src="/js/main.js"></script>
+    </body>
+</html>
