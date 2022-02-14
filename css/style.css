@@ -1,0 +1,175 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* header style */
+header{
+  background: rgba(102, 118, 138);
+  color: white;
+  height: 432px;
+  float: left;
+  width: 100%;
+}
+
+/* logo */
+nav *{
+  display: inline-block;
+  margin-left: 25%;
+}
+nav > ul{
+  width: 30%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li{
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+nav img{
+height: 50px;
+}
+/* donate button */
+nav > button{
+background: white;
+height: 30px;
+width: 75px;
+color: blue;
+}
+header > section{
+  text-align:center;
+  display: block;
+  width: 50%;
+  margin: 5% 25%;
+}
+/* main section style divided in 3 sections */
+main + section{
+  text-align:center;
+  display: block;
+  width: 50%;
+  margin: 0 25%;
+}
+.content{
+  text-align: center;
+  display: block;
+  margin: 7% 35%;
+  float: left;
+}
+.middle{
+  background: rgba(219, 223, 226);
+  height: 600px;
+  float: left;
+}
+.middlecontent{
+  display: block;
+  float: left;
+  width: 35%;
+  margin: 0 7.5%;
+  text-align: justify;
+  height: 100%;
+}
+h3{
+  text-align: center;
+}
+h5{
+  margin: 10px 0 10px 19px;
+}
+section > button{
+margin: 3% 40% 0 40%;
+height: 30px;
+width: 108px;
+background-color: Transparent;
+}
+.middlecontent > section{
+  background: rgba(102, 118, 138);
+  display: block;
+  width: 60%;
+  height: 40%;
+  margin: 15% 0% 10% 20%;
+}
+/* foother style */
+footer{
+  background: rgba(22, 31, 42);
+  color: white;
+  height: 430px;
+  float: left;
+  width: 100%;
+}
+.footerleft{
+  display: block;
+  float: left;
+}
+.footerright{
+  float: right;
+  margin: 16px 80px;
+  text-align: left;
+  width: 200px;
+}
+.footerright ul{
+  padding: 0;
+  margin: 0 0 0 19px;
+  list-style: none;
+  color:  rgba(216, 218, 219);
+}
+.footerleft li{
+  display: inline;
+  align-content: space-around;
+  color:  rgba(102, 118, 138);
+  margin: 0 0 0 19px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+div{
+  clear: both;
+  border-bottom: 1px solid white;
+  margin: 0 50px;
+}
+.footherbottom{
+  margin: 20px 50px;
+  clear: left;
+}
+/* social media logo */
+img{
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+}
+/* footer logo */
+small + a > img{
+  float: right;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
