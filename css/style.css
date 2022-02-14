@@ -1,0 +1,458 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header i{ 
+  /* float:right; */
+  visibility:hidden;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px 40px;
+  border-top: 2px solid rgb(199,199,199) ;
+}
+nav button{
+  color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(51,57,66);
+}
+nav a{
+  text-decoration: none;
+  color: rgb(51,57,66);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header img{
+  width: 40%;
+ 
+}
+header nav + section section img{
+  width: 80%;
+ 
+}
+
+
+header > section {
+  display: flex;
+}
+
+header section section{
+  width: 60%;
+  background-color: rgb(241,243,245);
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 1% 9% 4% 5%;
+  font-size: 0.8rem;
+}
+
+h1{
+  width: 100%;
+ 
+}
+header form{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  max-width: 450px;
+  font-size: 0.8rem;
+
+}
+form input{
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(142,155,162);
+}
+
+form input[type="submit"]{
+  width: 25%;
+  background-color: rgb(184,197,207);
+  color: white;
+  margin:10px 0;
+}
+
+form input[type="email"]{
+  width: 73%;
+  margin:10px 0;
+  color: rgb(241,243,245);
+}
+
+
+
+.jwli{
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  padding: 5% 10%;
+  text-align: center;
+  font-size: 1rem;
+
+}
+.jwli section{
+  padding: 0 2%;
+  width: 50%;
+}
+.jwli span{
+  font-weight: bolder;
+}
+.jwli h6{
+  font-style: italic;
+color: rgb(143,156,163);
+font-weight: lighter;
+font-size: 1rem;
+} 
+.jwli h3{
+font-size: 0.8rem;
+margin: 0 0 60px 0;
+} 
+.jwli div{
+  border-bottom: 4px solid rgb(255,221,240);
+  width: 50%;
+  margin: 0 25% 0 0;
+
+}
+.ourHistory img{
+  width: 70%;
+}
+.ourHistory{
+  background-color: rgb(241,243,245);
+  display: flex;
+  flex-flow: wrap row;
+  padding: 10px 40px;
+  font-size: 1.3rem;
+  
+
+}
+.ourHistory section{
+  width: 60%;
+  padding: 0 5% 0 0;
+  font-size: 0.9rem;
+ 
+}
+.ourHistory  section + section{
+  width: 40%;
+  
+  color: rgb(143,156,163);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourHistory  section + section section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+
+}
+  h2{
+  width: 100%;
+}
+  main section + h2{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+.founder img{
+  width: 20%;
+}
+.founder section{
+  width: 80%;
+  padding: 0 30px;
+  font-size: 1rem;
+}
+.founder{
+  margin: 0 3%;
+  padding: 2%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px 1px rgb(232,232,232);
+}
+
+.fundation{
+  margin: 5% 3%;
+  display: flex;
+  flex-flow: wrap row;
+}
+
+.fundation section{
+  width: 50%;
+  font-size: 1rem;
+  padding: 0 1%;
+}
+
+.fundation h3{
+ margin: 0;
+  color: rgb(143,156,163);
+  letter-spacing: 0.4rem;
+}
+
+.fundation small{
+  border-top: 1px solid;
+  color: rgb(143,156,163);
+  margin: -7% 0 5% 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+footer > section{
+  background-color:rgb(184,197,208) ;
+  font-size: 1rem;
+  color: white;
+  font-weight: lighter;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+footer form input[type="submit"]{
+ background-color: rgb(143,156,163);
+
+}
+
+
+.copyright{
+  border: 1px solid;
+  background-color: rgb(143,156,163);
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+ 
+}
+.copyright a{
+  color: white;
+  text-decoration: none;
+
+}
+
+.copyright section {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.copyright section ul{
+  width: 30%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.copyright section + section{
+  border-top: 1px solid white;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.copyright section + section ul{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.copyright section + section nav ul{
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  
+}
+
+.copyright section + section nav{
+  width: 40%;
+  margin: 0;
+}
+.copyright section + section ul li:first-child a, .copyright nav a {
+  font-weight: 700;
+  
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (min-width: 1200px){
+  .ourHistory img{
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 750px) {
+
+  header section + img{
+    display: none;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  header section section {
+    width: 100%;
+    align-items: center;
+  }
+
+  .jwli div{
+    width: 100%;
+    margin: 0;
+  }
+
+  .ourHistory  section + section{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+
+  .ourHistory{
+    text-align: justify;
+  }
+  
+  .founder{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   text-align:justify;
+  }
+
+  .founder h5{
+    text-align: center;
+  }
+
+  .founder section, .fundation section, .ourHistory img{
+    width: 100%;
+  }
+
+  .founder img{
+    width: 40%;
+  }
+
+  .fundation{
+    flex-direction: column;
+    text-align: justify;
+  }
+ 
+  .fundation h3{
+    text-align: left;
+  }
+ 
+}
+
+@media only screen and (max-width: 600px) {
+
+header ul *{
+    display: none;
+  }
+
+.jwli{
+  padding: 1%;
+}
+
+.jwli section,.ourHistory section, .ourHistory section + section {
+  width: 100%;
+}
+
+header i{ 
+  /* float:none; */
+  visibility:visible;
+  font-size: 1.5rem;
+}
+.ourHistory{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.copyright section, .copyright section + section nav ul  {
+  
+  display: flex;
+  flex-flow: wrap column;
+  
+  /* align-items: center; */
+  /* align-content: space-between; */
+  
+
+
+}
+.copyright section + section nav  {
+  width: 20%;
+  margin: 0 30px 0 0;
+  
+}
+
+
+
+footer >section{
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+.copyright section + section ul li:nth-child(n+2) a{
+  display: none;
+}
+
+} 
