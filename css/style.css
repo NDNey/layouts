@@ -1,0 +1,291 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  padding: 0 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* header style */
+
+header i {
+  visibility: hidden;
+}
+
+header {
+  background: rgba(102, 118, 138);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  padding: 0 10px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  width: 30%;
+}
+
+nav section {
+  width: 40%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav > section + section {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+nav > section button {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 75px;
+  margin: 0 15px;
+  color: rgb(102, 118, 138);
+}
+
+header > section {
+  text-align: center;
+  width: 80%;
+}
+
+header section section {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+header a {
+  font-size: 1.5rem;
+  margin: 30px 10px;
+}
+
+header p {
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(22, 31, 42);
+}
+
+main button {
+  border: 1.5px solid rgb(164, 165, 166);
+  height: 50px;
+  width: 170px;
+  background-color: transparent;
+}
+
+.content {
+  padding: 5%;
+  text-align: center;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.middle {
+  background: rgba(219, 223, 226);
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.middle section {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle img {
+  width: 60%;
+}
+
+/* foother style */
+footer {
+  background: rgba(22, 31, 42);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer section section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer section section ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  width: 50%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer section section span {
+  color: rgb(88, 103, 122);
+  margin: 0;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.address * {
+  margin: 3px;
+}
+
+div {
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+}
+
+footer img {
+  width: 40px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media only screen and (max-width: 950px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer section section {
+    width: 50%;
+  }
+  .content {
+    width: 100%;
+  }
+
+  header nav ul * {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  header nav ul li:nth-child(n + 2) a {
+    display: none;
+  }
+  header i {
+    visibility: visible;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.8rem;
+  }
+  header p,
+  p {
+    font-size: 1.2rem;
+  }
+
+  main section {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer section {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+  }
+
+  footer section section,
+  footer section section * {
+    width: 100%;
+  }
+
+  footer .footherbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer a img {
+    width: 50%;
+  }
+
+  .address {
+    padding: 0;
+    text-align: center;
+  }
+}
