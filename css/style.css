@@ -1,21 +1,20 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
-
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -23,153 +22,214 @@
 /*******************************************/
 
 body {
-
+  font-family: Arial,Helvetica,sans-serif;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* header style */
-header{
-  background: rgba(102, 118, 138);
-  color: white;
-  height: 432px;
-  float: left;
-  width: 100%;
+/* header and navbar */
+nav {
+  height: 50px;
+  background: black;
+  padding: 0 10px 0 30px;
+  margin: 0;
 }
 
-/* logo */
-nav *{
-  display: inline-block;
-  margin-left: 25%;
-}
-nav > ul{
-  width: 30%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-nav > ul > li{
-  width: 30%;
-  margin: 0;
-  padding: 0;
-}
-nav img{
-height: 50px;
-}
-/* donate button */
-nav > button{
-background: white;
-height: 30px;
-width: 75px;
-color: blue;
-}
-header > section{
-  text-align:center;
-  display: block;
-  width: 50%;
-  margin: 5% 25%;
-}
-/* main section style divided in 3 sections */
-main + section{
-  text-align:center;
-  display: block;
-  width: 50%;
-  margin: 0 25%;
-}
-.content{
-  text-align: center;
-  display: block;
-  margin: 7% 35%;
+nav * {
   float: left;
-}
-.middle{
-  background: rgba(219, 223, 226);
-  height: 600px;
-  float: left;
-}
-.middlecontent{
-  display: block;
-  float: left;
-  width: 35%;
-  margin: 0 7.5%;
-  text-align: justify;
-  height: 100%;
-}
-h3{
-  text-align: center;
-}
-h5{
-  margin: 10px 0 10px 19px;
-}
-section > button{
-margin: 3% 40% 0 40%;
-height: 30px;
-width: 108px;
-background-color: Transparent;
-}
-.middlecontent > section{
-  background: rgba(102, 118, 138);
-  display: block;
-  width: 60%;
-  height: 40%;
-  margin: 15% 0% 10% 20%;
-}
-/* foother style */
-footer{
-  background: rgba(22, 31, 42);
-  color: white;
-  height: 430px;
-  float: left;
-  width: 100%;
-}
-.footerleft{
-  display: block;
-  float: left;
-}
-.footerright{
-  float: right;
-  margin: 16px 80px;
-  text-align: left;
-  width: 200px;
-}
-.footerright ul{
-  padding: 0;
-  margin: 0 0 0 19px;
-  list-style: none;
-  color:  rgba(216, 218, 219);
-}
-.footerleft li{
-  display: inline;
-  align-content: space-around;
-  color:  rgba(102, 118, 138);
-  margin: 0 0 0 19px;
-}
-a{
   text-decoration: none;
   color: white;
+  font-weight: bold;
+  font-size: 15px;
 }
-div{
-  clear: both;
-  border-bottom: 1px solid white;
-  margin: 0 50px;
-}
-.footherbottom{
-  margin: 20px 50px;
-  clear: left;
-}
-/* social media logo */
-img{
-  border-radius: 4px;
-  padding: 5px;
-  width: 50px;
-}
-/* footer logo */
-small + a > img{
-  float: right;
+nav ul {
+  padding: 0;
+  margin: 0 0 0 10px;
+  height: 100%;
+  border-left: 1px solid rgb(118,118,118);
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.fas {
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 0 8px;
+  color: black;
+}
+nav ul li {
+  display: inline-block;
+  /* margin: 0 20px 0 0; */
+  border-right: 1px solid rgb(118,118,118);
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+nav span {
+  color: black;
+  width: 30px;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+  border-right: 2px solid black;
+  margin: 10px 0 100px ;
+}
+nav select {
+  background-color: black;
+  display: inline-block;
+  padding: 0 7px;
+  width: 140px;
+  height: 100%;
+}
+
+form input {
+  /* background-color: red; */
+  height: 100%;
+  border: none;
+  color: black;
+  width: 140px;
+}
+form {
+  padding: 5px 0;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: white;
+}
+main{
+  background-color:rgb(231,232,225) ;
+  padding: 0 60px 60px 60px;
+  margin: 0 0 100px 0;
+}
+p{
+  color: rgb(230, 228, 235) ;
+}
+
+span a {
+  color:rgb(230, 228, 235) ;
+  text-decoration: none;
+  border-left: 3px solid rgb(71,161,216);
+  padding: 0 0 0 10px;
+}
+
+
+.welcome section {
+
+  color: rgb(132,107,84);
+  display: inline-block;
+  width: 49%;
+  /* margin: 2% 0 0 0; */
+}
+
+.welcome section h4 {
+  font-size: 25px;
+  text-align: end;
+  font-weight: lighter;
+}
+h1{
+  font-size: 35px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+
+.mainNews {
+  height: 600px;
+  clear: both;
+}
+.mainNews section {
+  display: inline-block;
+}
+
+.trump {
+  border: 5px solid rgb(231,232,225);
+  float: left;
+  background-color: blanchedalmond;
+  width: 50%;
+  height: 100%;
+  background-image: url(https://c.files.bbci.co.uk/7E9D/production/_93531423_mediaitem93531422.jpg);
+  background-size: 100% 100%;
+  padding: 0 0 0 20px;
+ 
+}
+.trump span a {
+  border-left: 3px solid red;
+}
+.trump section > h2{
+  color: white;
+  margin: 72% 0 0 0;
+  font-size: 40px;
+  font-weight:lighter;
+
+}
+.smallNews {
+  width: 50%;
+  height: 100%;
+}
+
+
+.smallNews section {
+  float: left;
+  width: 50%;
+  border: 5px solid rgb(231,232,225);
+  height: 50%;
+  padding: 0 0 0 20px;
+
+}
+
+.smallNews section h2{
+  margin: 200px 0 12px 0;
+  font-size: 19px;
+  font-weight:lighter;
+  color: white;
+}
+
+.firstSection{
+  background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/118C/production/_93529440_036427656-1.jpg);
+  background-size: 100% 100%;
+}
+
+.secondSection{
+  background-image: url(https://ichef.bbci.co.uk/news/1024/branded_news/9913/production/_93378193_hi037221120.jpg);
+  background-size: 100% 121%;
+}
+.thirdSection{
+  background-image: url(https://ichef.bbci.co.uk/news/1024/branded_news/6287/production/_93532252_004745260.jpg);
+  background-size: 100% 121%;
+
+}
+
+.forthSection{
+  background-image: url(https://www.psypost.org/wp-content/uploads/2016/03/Businesswoman-at-work-on-computer-by-World-Bank-750x375.jpg);
+  background-size: 100% 121%;
+}
+
+h2 a{
+  color: rgb(74,74,74);
+  border-left: 3px solid red;
+  font-size: 45px;
+  padding: 0 0 0 5px;
+  text-decoration: none;
+  margin: 20px 0 0 10px;
+}
+
+.others section{
+  margin: 0;
+  float: left;
+  width: 33.333%;
+  height: 100%;
+  border: 10px solid white ;
+}
+.others section img{
+  width: 100%;
+  height: 100%;
+}
+
+.others {
+  margin: 0;
+  height: 230px;
+
+}
