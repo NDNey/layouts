@@ -5,124 +5,78 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body * {
-    color: rgb(48,70,89);
-
-}
-
-
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* header/navbar */
-header{
-    background: rgb(245,249,252);
-    padding: 2% 0;
+header {
+  border-top: 2px solid solid rgb(215, 216, 218);
+  border-bottom: 2px solid rgb(215, 216, 218);
+  height: 70px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 4%;
 }
-.li {
-  margin: 0 10%;
-  width: 50%;
-  padding: 0 10%;
-}
-.logo{
-  width: 18%;
-  text-align:center;
+nav * {
+  float: left;
+  display: block;
+  margin: 0 1%;
+  padding: 0;
+  text-decoration: none;
   font-weight: bold;
-
-}
-nav> button,section.half > form > button{
-  border-style: none;
-  text-align: center;
-  background:rgb(48,70,89);
-  color: white;
-  width: 70px;
-  margin: 0 0 0 -2%;
-}
-/* firs section divided 50% each */
-.half{
-  width: 50%;
-  display: inline-block;
-  float: left;
-}
-div.half img{
-  width: 100%;
-}
-main{
-  background: rgb(245,249,252);
-}
-section.half{
-  padding: 10% 10% 10% 5%;
-}
-H1,section.half >p{
-  margin: 4% 0;
-  padding: 0 40% 0 0;
-}
-section.half > form > input{
-  border-style: none;
-  background-color: rgb(207,215,223);
-}
-/* feature section */
-.Features{
-  padding-left: 5%;
-}
-.Features > section{
-  display: inline-block;
-  margin: 0;
-  width: 25%;
-  float: left;
-}
-.Features a{
-    color: rgb(48,70,89);
 }
 
-.lastdiv  {
-  padding: 5%;
-  width: 100%;
-  clear: both;
-  background: white;
+ul {
+  width: 40%;
 }
-h3{
-  font-size: 3rem;
-  margin: 5% 0 0 0;
-}
-.lastdiv p{
+li {
   width: 30%;
 }
-/* @media query for mobile versionand max 992px */
+select {
+  border: none;
+  color: blue;
+}
+input {
+  border: none;
+  width: 50%;
+  background: rgb(241, 241, 243);
+  color: blue;
+}
+form + img {
+  padding: 0;
+  margin: -1% -2%;
+  height: 40px;
+  width: 70px;
+}
+main > section {
+  width: 50%;
+  height: 600px;
+  float: left;
+  display: block;
+  margin: 10% 0;
+  padding: 5%;
+  font-size: 1.8rem;
+}
 
-@media (max-width: 992px){
-  nav > div + button{
-    visibility: hidden;
-  }
-.half,section.half >p {
-  font-size: 1rem;
-  width: 100%;
-  padding: 0;
-}
-.half > h1{
-  width: 100%;
-  padding: 0;
-}
-.Features > section,.lastdiv > h3,.lastdiv > p{
-  width: 100%;
-  margin: 3% 0;
-}
+button {
+  background: rgb(47, 102, 243);
+  color: white;
+  height: 10%;
 }
 
 /******************************************
