@@ -17,3 +17,8 @@ The layouts were built using HTML and CSS. In some of them, I used the CSS Layou
 ## Lessons Learned:
 
 No matter what your experience level is, start building and practicing because being an engineer means continuously learning. Every time you build something even if it is very basic you will end up learning new things, new techniques, or best practices. I have improved a lot more since I built all these layouts but they were key in my learning experience and improvement. Now I can come back to this repo and see the before and after.
+
+## Demo/List:
+<a target="_blank" href="https://davidney.com/webservices">
+	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645132704/websites/demo_ijjufm.gif"  >
+</a>
