@@ -1,4 +1,4 @@
-## The Foodist
+## Restaurant
 <a target="_blank" href="https://github.com/NDNey/layouts">
-	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645128478/websites/foodist_o2r6vn.png"  >
+	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645129249/websites/cuisine-restaurant-mithun-ray_t5f3x9.png"  >
 </a>

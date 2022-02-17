@@ -1,0 +1,235 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/* header bacground and navbar */
+header{
+  background: url(https://images.squarespace-cdn.com/content/v1/5b5a542bf407b4de009eac2b/1539927738572-ABUYOS8ZRY85PKM3ZCCJ/ke17ZwdGBToddI8pDm48kLvgIuazWRxDGeALQ0yXNL97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0plef_PmwB6-3GP4qDbCUv-NJH_7PgqOJZyXVG2BzskSDTgNNv9DnYL8WSMeU4Ae7A/image-asset.jpeg);
+  background-size: 100% 100%;
+  padding: 0 0 1% 0;
+}
+nav *, .Welcome ul > li a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+nav > ul{
+  float: right;
+  width: 80%;
+  margin: 1%;
+  text-align: right;
+}
+nav > ul >li  {
+  margin-right: 3%;
+}
+/* title and form */
+.Welcome {
+  width: 50%;
+  font-weight: bold;
+  margin: 10%;
+}
+.Welcome h1{
+    font-size: 3rem;
+}
+.Welcome form{
+  display: inline-block;
+  background: white;
+  border: 2px solid rgb(218,219,233);
+  border-radius: 5px;
+  color: rgb(195,195,195);
+}
+form > select{
+  margin: 0;
+  background: rgb(255,136,0);
+  color: white;
+  border-style: none;
+  height: 30px;
+}
+form input{
+border-style: none;
+color: rgb(195,195,195);
+}
+.Welcome ul *{
+  display: inline-block;
+  color: rgb(255,136,0);
+  margin: 3% 0;
+}
+.Welcome ul > li,ul{
+  margin: 2% 4% 0 0 ;
+  padding:0;
+}
+
+/* main section */
+main a{
+  color: rgb(255,136,0);
+  text-decoration: none;
+}
+main h3{
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+main p{
+  text-align: justify;
+}
+.discover{
+  background: url(https://images-ext-2.discordapp.net/external/An7aM7-SoXc0sV_4lwB6CAFnyjqrc9peeZnj9p2GaFE/https/i.imgur.com/09m5BSY.jpg);
+  background-size: 100% 100%;
+}
+.discover > section{
+  width: 50%;
+  margin: 0 0 0 40%;
+  padding: 5% 0;
+}
+.discover button{
+  background:rgb(255,136,0);
+  border-style: hidden;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  width: 30%;
+  margin: 2% 0;
+}
+/* cousine section and pictures */
+.cuisine{
+  background: rgb(242,246,247);
+  text-align: center;
+  padding: 5% 0;
+}
+.cuisine ul *{
+  display: inline-block;
+  color: black;
+  margin: 2% 3%;
+}
+.cuisine > ul{
+  text-align: center;
+  width: 40%;
+  border-bottom: 2px solid gray;
+  margin: 5% 0 5% 30%;
+}
+.cuisine.clearfix section img{
+  border: 5px solid rgb(242,246,247);
+  width: 100%;
+  height: 300px;
+  margin: 0;
+}
+.cuisine.clearfix section{
+  width: 24%;
+  display: inline-block;
+}
+/* contact info and video */
+.contact {
+  background: url(https://image.freepik.com/free-photo/top-view-white-office-desk-table-with-coffee-cup-flat-lay_14098-345.jpg);
+  background-size: 100% 105%;
+  text-align: center;
+  padding: 5% 0;
+}
+.contact section *{
+  display: block;
+  margin: 1% 0;
+  font-weight: bold;
+}
+.schedule section {
+  display: inline-block;
+  margin: 0 5%;
+}
+.video > iframe{
+  width :483px;
+  height:362px;
+  margin: 2% 0;
+}
+/* customers reviews */
+.cuisine h3 + a > img{
+  margin: 5% 0 2% 46%;
+  display: block;
+  border: 1px solid rgb(112,126,109);
+  border-radius: 50%;
+  width: 7%;
+  height:90px ;
+}
+.cuisine small, .cuisine h4{
+  margin: 0;
+  font-size: 1.3rem;
+}
+.cuisine p{
+  text-align: center;
+  margin: 4% 10%;
+}
+.cuisine img{
+  width: 7%;
+  display: block;
+  margin: 0 0 0 47%;
+}
+/* Media query */
+@media  (max-width: 650px) {
+  .Welcome {
+    width: 100%;
+    margin: 0 10%
+  }
+  nav > ul *{
+    display: block;
+    margin: 1% 0;
+  }
+  .discover > section{
+    width: 90%;
+    margin:0;
+    padding: 5% 0;
+  }
+  .cuisine.clearfix section{
+    width: 48%;
+    display: inline-block;
+  }
+  .cuisine > ul{
+    text-align: center;
+    width: 90%;
+    border-bottom: 2px solid gray;
+    margin: 5%;
+}
+.video > iframe{
+  width :250px;
+  height:180px;
+  margin: 2% 0;
+}
+.cuisine h3 + a > img{
+  margin: 5% 0 2% 46%;
+  display: block;
+  border: 1px solid rgb(112,126,109);
+  border-radius: 50%;
+  width: 15%;
+  height:70px ;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
