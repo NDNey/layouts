@@ -21,255 +21,109 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-  background: rgb(178, 168, 169);
+body * {
+    color: rgb(48,70,89);
+
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* header and background */
+/* header/navbar */
 header{
-  border-bottom: 5px solid rgb(178,168,169);
-  border-right: 5px solid rgb(178,168,169);
-  border-radius:100% 0% 39% 100% / 23% 37% 34% 0%  ;
-  transform: skewY(7deg);
-  height: 670px;
-  width: 100%;
-  margin: 0;
-  background: url(https://cdn.discordapp.com/attachments/769332575600640010/782177561764823040/purplehair.jpg);
-  background-size: 100% 100%;
-  background-position: center;
+    background: rgb(245,249,252);
+    padding: 2% 0;
 }
-/* navbar */
-nav,ul {
-  margin:  0;
-  background: white;
-  width: 100%;
-  padding: 1%  ;
+.li {
+  margin: 0 10%;
+  width: 50%;
+  padding: 0 10%;
 }
-ul *{
-  display: inline;
-  text-decoration: none;
-  color: black;
+.logo{
+  width: 18%;
+  text-align:center;
   font-weight: bold;
-  font-size: 0.7rem;
-  margin: 0 0 0 0.5%;
+
 }
-ul > h2{
-  font-size: 1.5rem;
-  font-style: italic;
-  margin: 0 2% ;
-}
-ul img{
-  width: 1.5%;
-  margin: 0 3% -0.1% 0;
-}
-/* repositioning header content */
-.headercontent{
-  transform: skewY(-7deg);
-}
-/* main section */
-.main{
-  margin: 9% 6% 0 44%;
-  background: white;
-  padding: 0;
-  width: 50%;
-  position: absolute;
-  z-index: 2;
-}
-.title{
-  color: white;
-  font-size: 150%;
-  display: block;
-  width:60%;
-  margin:  10% 0 0 10%;
-  font-size: 1rem;
-}
-.title h2{
-  display: block;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 4rem;
-  margin: 13% 0  2% 0;
-}
-/* black buttons */
-.title button ,.bottom button, #discount10 button{
-  background: black;
-  display: block;
-  color: white;
-  margin: 8% 0;
-  font-size: 0.9rem;
-  height: 30px;
-  width: 180px;
+nav> button,section.half > form > button{
   border-style: none;
-}
-/* 20% and 10%off discount sections */
-.discount{
-  font-size: 1rem;
-  display: block;
-  background: black;
-  width: 23%;
+  text-align: center;
+  background:rgb(48,70,89);
   color: white;
-  margin:  -10% 0 0 10%;
-  padding: 2%;
-  line-height: 250%;
-  position: relative;
+  width: 70px;
+  margin: 0 0 0 -2%;
 }
-.discount h3{
-  border-left: 3px solid white;
-  margin-left: -7%;
-  padding-left: 10%;
-}
-.discount span, .discount10 span{
-  font-size: 3rem;
-}
-.discount button{
-  font-size: 0.9rem;
-  height: 30px;
-  width: 150px;
-  border-style: none;
-  margin: 2% 0 6% 0;
-}
-.backgrounddiscount{
-  background: url(https://media.discordapp.net/attachments/769332575600640010/782454025823059997/image_2.jpg);
-  clear: both;
-  background-size: 100% 100%;
-  height: 100%;
-  padding: 3% 0;
-}
-#discount10{
-  padding: 0 10%;
-
-}
-#discount10 h3{
-  font-size: 0.8rem;
-  margin: 10% 0 0 0;
-}
-.backgrounddiscount + h3{
-  text-align: center;
-  font-size: 2rem;
-}
-/* middle section and icons */
-.middle >section {
-display: inline-block;
-width: 25%;
-text-align: center;
-font-size: 0.8rem;
-margin: 10% 3%;
-}
-.middle{
-  padding: 0 10%;
-}
-main section img{
-  width: 30px;
-}
-/* make your momentum section and video */
-#momentum{
-  display: block;
+/* firs section divided 50% each */
+.half{
   width: 50%;
-  float: left;
-}
-.bottom > section + section{
-
-  background: url(https://img.vixdata.io/pd/webp-small/es/sites/default/files/m/mujer-sonriente-con-tupe-en-la-cabeza.jpg);
-  background-size: 80% 80% ;
-  width: 50%;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-
-}
-.bottom img{
-  width: 24%;
-  margin: 25%;
-}
-.bottom{
-  background: rgb(243,244,246);
-  width: 100%;
-  padding: 0 10%;
-}
-.bottom h3{
-  font-size: 1.6rem;
-  display: block;
-}
-/* It was taking as aside due to page was desing to show 2 containers overlapping */
-aside{
-  background: white;
-  width: 50%;
-  margin: 0 0 0 6%;
-  padding: 3% 5%;
-  position: absolute;
-  z-index: 1;
-}
-/* staff pictures and sections */
-.staff > section{
-  width: 33%;
-  display: block;
-  float: left;
-  border-right: 15px solid white;
-  text-align: center;
-  margin: 0;
-}
-.staff img{
-  width: 100%;
-}
-.staff > section >section{
-  background: black;
-  color: white;
-  width: 80%;
-  margin: -8% 0 20% 10%;
-  position: relative;
-  padding: 1% 0;
-}
-.staff h5{
-  margin: 0;
-  font-weight: bold;
-}
-/* our LOOKBOOK end section */
-.clearfix > section{
-  width: 32.5%;
   display: inline-block;
-  padding: 0;
-  margin: 0;
+  float: left;
 }
-.middlelookbook > section img{
-  border-right:  15px solid white;
-  border-left: 15px solid white;
+div.half img{
   width: 100%;
+}
+main{
+  background: rgb(245,249,252);
+}
+section.half{
+  padding: 10% 10% 10% 5%;
+}
+H1,section.half >p{
+  margin: 4% 0;
+  padding: 0 40% 0 0;
+}
+section.half > form > input{
+  border-style: none;
+  background-color: rgb(207,215,223);
+}
+/* feature section */
+.Features{
+  padding-left: 5%;
+}
+.Features > section{
+  display: inline-block;
   margin: 0;
-  padding: 0;
-  height: 400px;
+  width: 25%;
+  float: left;
 }
-.middlelookbook > section + section img {
-  height: 270px;
-  border-top:  15px solid white;
+.Features a{
+    color: rgb(48,70,89);
 }
-.side > section img{
-  width: 98%;
-  margin: 0;
-  padding: 0;
-  height: 270px;
-}
-.side > section + section img {
-  border-top:  15px solid white;
+
+.lastdiv  {
+  padding: 5%;
   width: 100%;
-  height: 400px;
+  clear: both;
+  background: white;
 }
-/* Media query */
-@media  (max-width: 1280px) {
-  .main{
-    background: white;
-    width: 100%;
-    margin: 0;
-    position: relative;
+h3{
+  font-size: 3rem;
+  margin: 5% 0 0 0;
+}
+.lastdiv p{
+  width: 30%;
+}
+/* @media query for mobile versionand max 992px */
+
+@media (max-width: 992px){
+  nav > div + button{
+    visibility: hidden;
   }
-  aside{
-    width: 100%;
-    margin: 0;
-  }
+.half,section.half >p {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0;
+}
+.half > h1{
+  width: 100%;
+  padding: 0;
+}
+.Features > section,.lastdiv > h3,.lastdiv > p{
+  width: 100%;
+  margin: 3% 0;
+}
+}
 
 /******************************************
 /* ADDITIONAL STYLES
