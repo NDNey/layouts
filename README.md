@@ -20,5 +20,6 @@ No matter what your experience level is, start building and practicing because b
 
 ## Demo/List:
 <a target="_blank" href="https://davidney.com/webservices">
-	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645132704/websites/demo_ijjufm.gif"  >
+	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645132704/websites/demo_ijjufm.gif" width="100%"   >
 </a>
+
