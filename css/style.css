@@ -1,7 +1,10 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 /* Clear fix hack */
@@ -18,283 +21,112 @@
   clear: both;
 }
 
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-  
-
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-header{
-  padding: 20px 0;
-
- 
-
+header {
+  background-color: rgb(17, 17, 17);
 }
-header img{
-  width: 10%;
-  /* border: 1px solid blue; */
+header * {
+  color: rgb(167, 165, 165);
+  text-decoration: none;
+  background-color: rgb(17, 17, 17);
+}
+header img {
+  width: 90px;
+  height: 80px;
   float: left;
+  margin: 0 200px;
 }
-
-.navLinks{
-  /* border: 1px solid red; */
-  display: inline-block;
-  width: 90%;
-  color: rgb(175,171,169);
-  font-weight: bold;
-}
-.navLinks a{
-
-  color: rgb(150,153,150);
-  padding: 0 7px;
-
-}
-
-/* .navLinks ul li {
-  background-color: rgb(236,236,236));
-} */
-
-.navLinks > span{
-  margin: 15px 0 10px 0;
-  float: left;
-  width: 30%;
-  /* border: 1px solid black; */
-  font-size: 19px;
-
-}
-.navLinks span  a{
-  color: rgb(22,165,29);
-}
-
-.navLinks  ul li{
-  display: inline-block;
-  margin: 0 6px 0 0;
-  font-size: 25px;
-  font-weight: lighter;
-  background-color: rgb(236,236,236);
-
-  text-align: center;
- 
-}
-.navLinks ul span{
-  background-color: white;
+nav {
   width: 100%;
-  font-size: 20px;
-  margin: 0 10px 0 0;
-  font-weight: lighter;
+  float: left;
+}
+nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+nav ul li select {
+  border: none;
+}
+.mainImage {
+  color: white;
+  width: 100%;
+  float: left;
+  background-image: url(https://venturebeat.com/wp-content/uploads/2017/01/Ellen-Pao.jpg?fit=2048%2C1365&strip=all);
+  background-position: 100% 40%;
+  background-size: cover;
+  height: 420px;
 }
 
-.navLinks  ul{
-  text-align: right;
-  margin: 0;
+h1 {
+  margin: 275px 0 0 296px;
+  padding: 15px;
+  width: 40%;
+  background-color: white;
+  opacity: 0.9;
+  color: black;
+}
+
+main img {
+  width: 40%;
+}
+main section + section {
   float: left;
   width: 70%;
-  /* border: 3px solid green; */
-  padding: 10px 0;
- 
+
+  margin: 3% 15%;
+  padding: 20px 0;
+  display: block;
+  border-bottom: 2px solid rgb(222, 222, 223);
+}
+
+main section + section * {
+  float: left;
+}
+
+main section + section h3 {
+  margin: 0 10px;
+  font-size: 28px;
+  width: 40%;
+}
+.postedTime {
+  width: 40%;
+  margin: 10px;
+}
+
+.postedTime * {
+  margin: 0 10px 0 0;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.postedTime time {
+  color: rgb(167, 163, 163);
 }
 
 /******************************************
-/* nav bar
+/* ADDITIONAL STYLES
 /*******************************************/
-nav{
-  margin: 9px 0;
-  display: inline-block;
-  width: 90%;
- 
-}
-header{
-  border-bottom: 3px solid rgb(213,213,213) ;
-}
-nav li{
-  display: inline-block;
-}
-nav li select{
-  border: none;
-  font-size: 20px;
-}
-
-nav ul{
-  /* border: 1px solid blue; */
-  width: 45%;
-  margin: 0;
-  float: left;
-  color: rgb(62,67,62);
-  font-size: 20px;
-  padding: 0;
-}
-nav ul li a{
-  color: rgb(62,67,62);
-}
-
-nav form{
-  margin: 0 0 0 25%;
-  /* border: 6px solid magenta; */
-  width: 30%;
-  float: left;
-}
-nav form button{
-  color: white;
-  background-color: rgb(62,67,62);
-  box-shadow: none;
-  border-radius: 0px;
-  height: 30px;
-  
-}
-form input{
-  height: 30px;
-  margin: 0;
-  width: 62%;
-}
-
-
-.announcement{
- 
-  background-color:rgb(15,74,0) ;
-  color: white;
-  height: 50px;
-  text-align: center;
-  padding: 15px;
-  margin: 0 20px;
-}
-.announcement span {
-  font-size: 20px;
-}
-.announcement a{
-  font-size: 20px;
-color: white;
-}
-.fa-search{
-  border: 2px solid rgb(239,239,239);
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  float: right;
-
-}
-
-
-
-main{
- 
-  border-top: 3px solid rgb(213,213,213);
- padding: 0 0 0 20px;
-  width: 70%;
-  float: left;
- 
-}
-
-.crunchReport{
-  /* border: 1px solid green; */
-  float: left;
-  width: 642px;
-  display: block;
-
-}
-h1{
-  color: rgb(62,67,62);
-}
-h1 a{
-color: rgb(10,158,1);
-}
-.crunchReport span{
-  color:rgb(187,191,176) ;
-  font-size: 20px;
-}
-.stories{
-  width: 30%;
-  float: left;
-  padding: 0 ;
-  margin: 0 40px;
-}
-.stories img{
-  width: 40%;
-  float: left;
-}
-.stories section{
-  padding: 7px 0;
-}
-.stories section section {
-  display: inline-block;
-  width: 60%;
-}
-.stories section section *{
-  padding: 0 0 0 30px;
-  margin: 0;
-}
-aside{
-  width: 30%;
-  float: left;
-  background-color: rgb(236,236,236);
-  padding: 0 0 50px 0 ;
-}
-.tip{
-  margin: 20px 0 0 0;
-  font-size: 30px;
-  border-bottom: 5px solid rgb(213,213,213) ;
-  border-top:5px solid rgb(213,213,213)  ;
-
-}
-
-.tipForm h5{
-  background:rgb(15,74,0) ;
-  height: 40px;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 17px;
-  text-transform: uppercase
-}
-.tipForm {
-  background-color: white;
-  width: 90%;
-  margin: 0 5%;
-  padding: 0 0 10px 0 ;
-  /* display: block; */
-}
-
-.tipForm form p{
-  border-bottom: 2px solid rgb(232,232,232);
-  padding: 10px 0;
-  margin: 10px 10px;
-}
-.tipForm form label{
-  margin: 0;
-  padding: 0;
-  font-weight: bolder;
-  width: 90%;
-}
-
-.tipForm form input{
-  margin: 0 10px;
-  padding: 0;
-  width: 5%;
-}
-
-aside input[type="submit"]{
-  background-color: rgb(10,158,1);
-  width: 90px;
-}
-
-aside input[type="text"]{
-  width: 200px;
-  margin: 25px 0 20px 10px;
-}
-aside h4,aside h4 a{
-font-size: 20px;
-text-align: center;
-color:rgb(117,109,83) ;
-margin: 0 0 20px 0;
-}
-
-
-
