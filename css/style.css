@@ -1,215 +1,242 @@
+/******************************************
+/* SETUP
+/*******************************************/
 
-/* font-family: 'Poppins', sans-serif; */
-
-.red{
-    color: rgb(234,67,53);
-}
-.green{
-    color: rgb(51,168,83);
-}
-.blue{
-    color: rgb(66,134,244);
-}
-.yellow{
-    color: rgb(251,188,28);
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
 }
 
-
-h1,.red,.green,.blue,.yellow{
-    font-family: 'poppins';
-    font-size: 6vw;
-    padding: 0;
-     margin: 0;
-}
-   
-.logo{
-    display: inline-block;
-    padding: 0;  
-   
-    margin: 0 0 3% 0;
-
-    text-align: end;
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
-.smalTitle{
-    position: absolute;
-    margin: -2% 0 0 -4% ;
-
-}
-.container{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.pages{
-    text-align: end;
-}
-.pages > a{
-    margin: 2% 1%;
-    color: black;
-    text-decoration: none;
+.clear {
+  clear: both;
 }
 
-form{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
-.bar:hover{
 
-    box-shadow: 3px 2px 12px  rgb(154,160,166) ;
-}
-.bar{
-    background: #fff;
-    border: 1px solid rgb(154,160,166) ;
-    box-shadow: none;
-    border-radius: 24px;
-    z-index: 3;
-    margin: 0 auto;
-    width: 100%;
-    height: 44px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.bar > a, i{
-    padding: 13px 0 13px 0;
-    margin: 0 5% 0 0;
-    color: rgb(154,160,166) ;
-}
-.bar > input{
-    width: 80%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  /* background-color: red; */
+  /* font-size: 12px; */
+  /* line-height: 1.4; */
+  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
-.buttons input{
-    margin: 10% 0;
-    height: 36px;
-    border: none;
-    background-color: rgb(248, 249, 250);
-    border: 1px solid rgb(248, 249, 250);
-    border-radius: 4px;
-    color: rgb(60, 64, 67);
-    font-size: 14px;
-    outline: none;
+/******************************************
+/* LAYOUT
+/*******************************************/
+main{
+  width: 65%;
+ 
 }
- .buttons input[type="submit"]:hover{
-    background-color: rgb(248, 249, 250);
-    border: 1px solid  rgb(154,160,166);
-    border-radius: 4px;
+/* background-color:rgb(59,40,44) ; */
+.mainNews{
+
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  /* height: 75vh; */
+
+  background-image: url(https://media.npr.org/assets/img/2021/07/01/ap19065619272907-6b9d8bf9d325e8abb5d19336e4974c9fb7f58706.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
 }
 
-/* styling for the advance search page */
-
-.containerAdvance{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#advanceSearch{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.advanceItems{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
-    margin: 2%;
-}
-#inputSearch{
-    width: auto;
-    width: 40%;
-    margin: 0;
-    display: flex;
-    align-items: flex-end;
-}
-#inputSearch input{
-    height: 20px;
-    width: 100%;
-    
-}
- #buttonInput{
-    background-color:rgb(77, 144, 254);
-    width: 10%;
-    border: 1px solid #3079ed;
-    color: rgb(255, 255, 255);
+.mainNews section{
+  width: 40%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-image: linear-gradient(to right,rgb(59,40,44)  ,rgb(59,40,44));
 }
 
-#advanceHeader{
-   
-    background-color: rgb(241,241,241);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#advanceHeader * {
-    font-family: 'poppins';
-    text-decoration: none;
-}
-h2{
-    margin: 0;
-    padding: 3% 2%;
-    font-weight: lighter;
-    color: red;
-    border-bottom: 2px solid  rgb(241,241,241);
+.mainNews section + section{
+  background-image: linear-gradient(to left,rgb(59,40,44)  ,rgb(70,59,85,0.1));
+
 }
 
-/* =================================== */
+h1{
+  font-size: 2.5rem;
+  margin: 15% 0 0 0 ;
+  
+}
+.mainNews h3{
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 
-@media only screen and (max-width: 700px) {
-   
-    .container{
-        min-height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+}
+.mainNews > section p{
+  margin: 9px 0;
+  font-weight: bold;
+}
 
-    form{
-        width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    }
-    .pages{
-        display: block;
-    }
+.mainNews > section h1 + p{
+  color: yellow;
+}
+.mainBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-    #name{
-        width: 70%;
-        margin: 4% 0;
-    }
+.mainBody > section{
+  width: 30%;
+  /* border: 1px solid red; */
+  margin: 10px 0;
+  /* border: 1px solid rgb(230, 228, 228); */
 
-    #name{
-        width: 70%;
-        margin: 4% 0;
-    }
-    #changer{
-        width: 20%;
-    } 
-    .buttons input{
-        margin: 10% 0;
-        height: 30px;
-        border: none;
-        background-color: rgb(248, 249, 250);
-        border: 1px solid rgb(248, 249, 250);
-        border-radius: 4px;
-        color: rgb(60, 64, 67);
-        font-size: 14px;
-        outline: none;
-    }
-    
-  }
+
+}
+.mainBody > section img{
+  width: 100%;
+  
+}
+.mainBody > section h4{
+  font-size: 2rem;
+  padding: 0 25px;
+  margin: 10px 0;
+}
+.mainBody > section + section{
+  
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+}
+.mainBody > section + section section{
+  border: 1px solid rgb(230, 228, 228);
+  padding: 15px 0;
+  height: 49%;
+}
+.mainBody > section + section section + section{
+  background-color:rgb(102,0,51) ;
+  color: white;
+}
+
+.mainBody > section + section section h4{
+  font-size: 1.5rem;
+  margin:0 0 20px 0;
+}
+.mainBody > section + section section span{
+  padding: 0 25px;
+}
+
+.mainLast{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url(https://slate.com/media/sites/slate-com/stripes-gray.png);
+  background-repeat: repeat;
+  margin: 20px 0;
+  background-size:0.1cm;
+  
+
+}
+.mainLast h5{
+  font-size: 1.5rem;
+  margin: 2px 0;
+}
+.mainLast span{
+  font-size: 1rem;
+
+}
+.mainLast section{
+  color:  rgb(50,10,63);
+  padding: 15px 0;
+  
+}
+
+.mainLast section + section{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  background-color:  rgb(50,10,63);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 11% 100%, 0 51%, 11% 0)
+}
+
+aside{
+  margin: 0 0 0 3%;
+  border: 1px solid rgb(209, 208, 208);
+  background-image: url(https://slate.com/media/sites/slate-com/stripes-gray.png);
+  background-repeat: repeat;
+  background-size:0.1cm;
+
+}
+aside a
+{
+  font-size: 1.3rem;
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  
+}
+
+aside nav, aside header section{
+  color: white;
+  display: flex;
+  flex-wrap: wrap row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  background-color: rgb(102,0,51);
+  
+}
+aside header nav + section{
+  background-color:rgb(40,27,33)
+}
+aside header nav + section a{
+  color: yellow;
+}
+
+
+aside h2{
+  font-size: 3.5rem;
+  margin: 0;
+
+}
+
+aside section section{
+  border-bottom: 1px solid rgb(230, 228, 228);
+  margin: 10px ;
+  padding: 10px 0;
+
+}
+
+aside section section span{
+  color: rgb(180,180,180);
+  text-transform: uppercase;
+}
+
+aside section section h5{
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+
+  
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
