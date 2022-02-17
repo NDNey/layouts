@@ -3,25 +3,23 @@
 /*******************************************/
 
 /* Box Model Hack */
-* {
-  text-decoration: none;
+*{
   box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
 }
 
 .clear {
-  clear: both;
+	clear: both;
 }
-
 
 
 /******************************************
@@ -29,117 +27,238 @@
 /*******************************************/
 
 body {
-  font-size: 12px;
-  font-family: Helvetica, Arial, sans-serif;
+    
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
 }
+
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header{
- 
-  background: rgb(46,112,97);
+header {
+  background-color: rgb(17, 17, 17);
   
-  
-}
-header section *{
- display: block;
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-header span{
-  font-size: 10px;
-  margin: 35px 0 0 30px;
-}
-header h2{
-  font-size: 30px;
-  font-weight: lighter;
-}
-header i{
-  margin: 0 0 0 30px;
 }
 
-header section section{
+header * {
+  color:white;
+  text-decoration: none;
+  background-color: rgb(17, 17, 17);
+}
+nav h2{
+     margin: 0 100px;
+     width: 30%;
+     font-size: 50px;
+     float: left;
+   
+}
+nav h2 span {
+     color: red;
+}
+
+nav {
+
+  width:100%;
   float: left;
-  width: 20%;
+}
 
-  text-align: center;
-}
-.brand{
-  width: 60%;
-}
-header nav ul{
-  background-color: white;
-  text-align: center;
-  color: black;
-}
-header li{
-  margin: 30px 0 0 30px;
-  font-size: 25px;
-  font-weight: bolder;
+nav ul li {
   display: inline-block;
+  margin: 10px 20px 0 0;
+  font-size: 25px;
 }
-nav a{
-  color: black;
+nav ul li select {
+  border: none;
+}
+
+
+main{
+     float: left;
+     /* border: 2px solid red; */
+     width: 60%;
+     margin: 5% 0 0 10%;
 }
 h1{
-  padding: 0 20%;
-  font-size: 90px;
-  font-weight: bolder;
-  text-align: center;
+     text-transform: uppercase;
+     border-bottom: 2px solid red;
 }
-.mainPic img{
-width: 50%;
-margin: 0 25%;
+.storiesContainer{
+     width: 60%;
+     float: left;
+    
+}
+.mainStory > img{
+     width: 100%;
+}
+.mainStory h3{
+     font-size: 30px;
+}
+.otherStories{
+     
+     display: inline-block;
+
+}
+.otherStories img{
+     width: 100%;
+     border-right: 10px solid white;
 }
 
-.newsContent{
-  margin: 30px;
+.otherStories section{
+     float: left;
+     width: 50%;
+    
 }
-.newsContent section {
-  width: 25%;
-  float: left;
-  padding: 20px;
-
-
-}
-.newsContent section h4{
-  font-size: 20px;
-  padding: 0 0 40px;
-  border-bottom: 3px solid rgb(46,112,97);
-}
-.newsContent section img{
-  width: 100%;
-  
+.otherStories h4{
+     font-size: 16px;
 }
 
-footer *{
-  color: rgb(140,140,129);
-  
+.newsList{
+    padding: 0 20px;
+     width: 40%;
+     float: left;
 }
+.newsList section{
+     margin: 0 10px;
+     border-bottom: 2px solid rgb(209, 208, 208);
+    
+}
+.newsList h5{
+     font-size: 20px;
+     color: rgb(159,30,60);
+     margin: 5px 10px;
+}
+.newsList p{
+     font-size: 15px;
+}
+.fa-external-link-square-alt{
+    color: white;
+    background-color: rgb(159,30,60);
+    border: 1px solid rgb(159,30,60);
+}
+.carSection{
+     border-bottom: 2px solid rgb(176,161,166);
+     float: left;
+     width: 100%;
+}
+.carSection h5{
+     font-size: 40px;
+     text-transform: uppercase;
+
+}
+.carSection span{
+     color: rgb(159,30,60);
+}
+.carSection a{
+     margin: 10px;
+     font-size: 20px;
+     color: rgb(176,161,166);
+     text-transform: capitalize;
+
+}
+.carSection h6{
+     margin: 0;
+     font-size: 40px;
+     font-weight: bolder;
+}
+.carSection section{
+     width: 50%;
+     float: left;
+}
+.carSection li *{
+text-decoration: none;
+color: black;
+font-weight: bolder;
+}
+
+.carSection li{
+     list-style: none;
+     margin: 10px 0;
+     padding: 10px 0;
+     border-bottom:1px solid rgb(176,161,166);
+}
+aside{
+     /* border: 2px solid gold; */
+     width: 20%;
+     float: left;
+     margin: 8% 10% 0 0;
+     padding: 0 20px;
+}
+aside img{
+     width: 100%;
+}
+aside h4{
+     font-size: 20px ;
+     text-transform: uppercase;
+     padding: 10px 0;
+     /* border-bottom: 2px solid red; */
+}
+aside li{
+     font-size: 15px;
+     font-weight: bolder;
+     border-bottom: 1px solid rgb(196, 193, 193);
+}
+
 footer{
-  background-color:rgb(33,33,33) ;
-  padding: 30px 0 5px 0;
-  clear: both;
+     
+     width: 100%;
+     clear: both;
+     padding: 40px 0;
 }
+footer ul{
+     padding: 0 0 0 10%;
+     margin: 0;
+     float: left;
+  
+     width: 50%;
+}
+footer section{
+     float: left;
+     width: 50%;
+    
 
-footer li{
-  font-size: 20px;
-  margin: 0 10px;
-  display: inline-block;
 }
-footer ul {
-  width: 50%;
-  margin: 0 25%;
-  text-align: center;
+footer ul li{
+     list-style: none;
+     display: inline-block;
+     font-size: 50px;
+     margin: 10px;
 }
-footer h6{
-  margin: 0 0 40px 0;
-  width: 100%;
-  font-size: 17px;
-  text-align: center;
+footer a{
+   
+     color: rgb(155,21,24);
 }
+footer section ul{
+     width: 100%;
+     text-align: right;
+}
+footer section h5{
+
+     /* border: 3px solid gold; */
+     width: 100%;
+     text-align: right;
+     font-weight: lighter;
+     font-size: 20px;
+     padding: 0 40px;
+     margin: 0;
+}
+footer section ul li a{
+     text-decoration: none;
+     color:rgb(120,180,238) ;
+     font-size: 20px;
+     padding: 0 10px;
+     margin: 0;
+     border-right: 1px solid rgb(120,180,238);
+}
+/* footer section ul{
+     padding: 0;
+    margin: 0;
+    background-color: red;
+
+} */
+
 
 
 /******************************************
