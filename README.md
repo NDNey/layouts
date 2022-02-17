@@ -5,7 +5,7 @@ Practice makes perfect! While learning web development I worked on a lot of fun 
 	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645060879/websites/learn-web-development_ezkjic.jpg"  >
 </a>
 
-### -> Each branch of this repo contains a different layout.
+### -> Each branch on this repo contains a different layout.
 
 **You can see some of them live here:** https://davidney.com/webservices
 ## How It's Made:
