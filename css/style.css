@@ -1,10 +1,7 @@
-/******************************************
-/* SETUP
-/*******************************************/
-
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* Clear fix hack */
@@ -21,222 +18,283 @@
   clear: both;
 }
 
-
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-  display: flex;
-  flex-direction: row;
-  padding: 0 10px;
-  /* background-color: red; */
-  /* font-size: 12px; */
-  /* line-height: 1.4; */
-  /* font-family: Helvetica, Arial, sans-serif; */
+  
+
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-main{
-  width: 65%;
+
+header{
+  padding: 20px 0;
+
  
-}
-/* background-color:rgb(59,40,44) ; */
-.mainNews{
-
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  /* height: 75vh; */
-
-  background-image: url(https://media.npr.org/assets/img/2021/07/01/ap19065619272907-6b9d8bf9d325e8abb5d19336e4974c9fb7f58706.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 70% 100%;
-}
-
-.mainNews section{
-  width: 40%;
-  padding: 3%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  background-image: linear-gradient(to right,rgb(59,40,44)  ,rgb(59,40,44));
-}
-
-.mainNews section + section{
-  background-image: linear-gradient(to left,rgb(59,40,44)  ,rgb(70,59,85,0.1));
 
 }
-
-h1{
-  font-size: 2.5rem;
-  margin: 15% 0 0 0 ;
-  
+header img{
+  width: 10%;
+  /* border: 1px solid blue; */
+  float: left;
 }
-.mainNews h3{
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
 
-}
-.mainNews > section p{
-  margin: 9px 0;
+.navLinks{
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 90%;
+  color: rgb(175,171,169);
   font-weight: bold;
 }
+.navLinks a{
 
-.mainNews > section h1 + p{
-  color: yellow;
-}
-.mainBody{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  color: rgb(150,153,150);
+  padding: 0 7px;
+
 }
 
-.mainBody > section{
+/* .navLinks ul li {
+  background-color: rgb(236,236,236));
+} */
+
+.navLinks > span{
+  margin: 15px 0 10px 0;
+  float: left;
   width: 30%;
-  /* border: 1px solid red; */
-  margin: 10px 0;
-  /* border: 1px solid rgb(230, 228, 228); */
-
+  /* border: 1px solid black; */
+  font-size: 19px;
 
 }
-.mainBody > section img{
+.navLinks span  a{
+  color: rgb(22,165,29);
+}
+
+.navLinks  ul li{
+  display: inline-block;
+  margin: 0 6px 0 0;
+  font-size: 25px;
+  font-weight: lighter;
+  background-color: rgb(236,236,236);
+
+  text-align: center;
+ 
+}
+.navLinks ul span{
+  background-color: white;
   width: 100%;
-  
-}
-.mainBody > section h4{
-  font-size: 2rem;
-  padding: 0 25px;
-  margin: 10px 0;
-}
-.mainBody > section + section{
-  
-  width: 40%;
-  display: flex;
-  flex-direction: column;
- justify-content: space-between;
-}
-.mainBody > section + section section{
-  border: 1px solid rgb(230, 228, 228);
-  padding: 15px 0;
-  height: 49%;
-}
-.mainBody > section + section section + section{
-  background-color:rgb(102,0,51) ;
-  color: white;
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  font-weight: lighter;
 }
 
-.mainBody > section + section section h4{
-  font-size: 1.5rem;
-  margin:0 0 20px 0;
-}
-.mainBody > section + section section span{
-  padding: 0 25px;
-}
-
-.mainLast{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-image: url(https://slate.com/media/sites/slate-com/stripes-gray.png);
-  background-repeat: repeat;
-  margin: 20px 0;
-  background-size:0.1cm;
-  
-
-}
-.mainLast h5{
-  font-size: 1.5rem;
-  margin: 2px 0;
-}
-.mainLast span{
-  font-size: 1rem;
-
-}
-.mainLast section{
-  color:  rgb(50,10,63);
-  padding: 15px 0;
-  
-}
-
-.mainLast section + section{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 40%;
-  background-color:  rgb(50,10,63);
-  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 11% 100%, 0 51%, 11% 0)
-}
-
-aside{
-  margin: 0 0 0 3%;
-  border: 1px solid rgb(209, 208, 208);
-  background-image: url(https://slate.com/media/sites/slate-com/stripes-gray.png);
-  background-repeat: repeat;
-  background-size:0.1cm;
-
-}
-aside a
-{
-  font-size: 1.3rem;
-  margin: 0 12px;
-  color: white;
-  text-decoration: none;
-  
-}
-
-aside nav, aside header section{
-  color: white;
-  display: flex;
-  flex-wrap: wrap row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2%;
-  background-color: rgb(102,0,51);
-  
-}
-aside header nav + section{
-  background-color:rgb(40,27,33)
-}
-aside header nav + section a{
-  color: yellow;
-}
-
-
-aside h2{
-  font-size: 3.5rem;
+.navLinks  ul{
+  text-align: right;
   margin: 0;
-
-}
-
-aside section section{
-  border-bottom: 1px solid rgb(230, 228, 228);
-  margin: 10px ;
+  float: left;
+  width: 70%;
+  /* border: 3px solid green; */
   padding: 10px 0;
-
+ 
 }
-
-aside section section span{
-  color: rgb(180,180,180);
-  text-transform: uppercase;
-}
-
-aside section section h5{
-  margin: 0 0 10px 0;
-  font-size: 1.5rem;
-
-  
-}
-
-
-
 
 /******************************************
-/* ADDITIONAL STYLES
+/* nav bar
 /*******************************************/
+nav{
+  margin: 9px 0;
+  display: inline-block;
+  width: 90%;
+ 
+}
+header{
+  border-bottom: 3px solid rgb(213,213,213) ;
+}
+nav li{
+  display: inline-block;
+}
+nav li select{
+  border: none;
+  font-size: 20px;
+}
+
+nav ul{
+  /* border: 1px solid blue; */
+  width: 45%;
+  margin: 0;
+  float: left;
+  color: rgb(62,67,62);
+  font-size: 20px;
+  padding: 0;
+}
+nav ul li a{
+  color: rgb(62,67,62);
+}
+
+nav form{
+  margin: 0 0 0 25%;
+  /* border: 6px solid magenta; */
+  width: 30%;
+  float: left;
+}
+nav form button{
+  color: white;
+  background-color: rgb(62,67,62);
+  box-shadow: none;
+  border-radius: 0px;
+  height: 30px;
+  
+}
+form input{
+  height: 30px;
+  margin: 0;
+  width: 62%;
+}
+
+
+.announcement{
+ 
+  background-color:rgb(15,74,0) ;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  margin: 0 20px;
+}
+.announcement span {
+  font-size: 20px;
+}
+.announcement a{
+  font-size: 20px;
+color: white;
+}
+.fa-search{
+  border: 2px solid rgb(239,239,239);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  float: right;
+
+}
+
+
+
+main{
+ 
+  border-top: 3px solid rgb(213,213,213);
+ padding: 0 0 0 20px;
+  width: 70%;
+  float: left;
+ 
+}
+
+.crunchReport{
+  /* border: 1px solid green; */
+  float: left;
+  width: 642px;
+  display: block;
+
+}
+h1{
+  color: rgb(62,67,62);
+}
+h1 a{
+color: rgb(10,158,1);
+}
+.crunchReport span{
+  color:rgb(187,191,176) ;
+  font-size: 20px;
+}
+.stories{
+  width: 30%;
+  float: left;
+  padding: 0 ;
+  margin: 0 40px;
+}
+.stories img{
+  width: 40%;
+  float: left;
+}
+.stories section{
+  padding: 7px 0;
+}
+.stories section section {
+  display: inline-block;
+  width: 60%;
+}
+.stories section section *{
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+aside{
+  width: 30%;
+  float: left;
+  background-color: rgb(236,236,236);
+  padding: 0 0 50px 0 ;
+}
+.tip{
+  margin: 20px 0 0 0;
+  font-size: 30px;
+  border-bottom: 5px solid rgb(213,213,213) ;
+  border-top:5px solid rgb(213,213,213)  ;
+
+}
+
+.tipForm h5{
+  background:rgb(15,74,0) ;
+  height: 40px;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 17px;
+  text-transform: uppercase
+}
+.tipForm {
+  background-color: white;
+  width: 90%;
+  margin: 0 5%;
+  padding: 0 0 10px 0 ;
+  /* display: block; */
+}
+
+.tipForm form p{
+  border-bottom: 2px solid rgb(232,232,232);
+  padding: 10px 0;
+  margin: 10px 10px;
+}
+.tipForm form label{
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  width: 90%;
+}
+
+.tipForm form input{
+  margin: 0 10px;
+  padding: 0;
+  width: 5%;
+}
+
+aside input[type="submit"]{
+  background-color: rgb(10,158,1);
+  width: 90px;
+}
+
+aside input[type="text"]{
+  width: 200px;
+  margin: 25px 0 20px 10px;
+}
+aside h4,aside h4 a{
+font-size: 20px;
+text-align: center;
+color:rgb(117,109,83) ;
+margin: 0 0 20px 0;
+}
+
+
+
