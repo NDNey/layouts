@@ -4,6 +4,7 @@
 
 /* Box Model Hack */
 * {
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -21,111 +22,125 @@
   clear: both;
 }
 
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
-}
 
-.alignleft {
-  float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
-}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-  color: #000;
   font-size: 12px;
-  line-height: 1.4;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-  background-color: rgb(17, 17, 17);
+header{
+ 
+  background: rgb(46,112,97);
+  
+  
 }
-header * {
-  color: rgb(167, 165, 165);
-  text-decoration: none;
-  background-color: rgb(17, 17, 17);
-}
-header img {
-  width: 90px;
-  height: 80px;
-  float: left;
-  margin: 0 200px;
-}
-nav {
-  width: 100%;
-  float: left;
-}
-nav ul li {
-  display: inline-block;
-  margin: 20px;
-}
-nav ul li select {
-  border: none;
-}
-.mainImage {
+header section *{
+ display: block;
   color: white;
-  width: 100%;
-  float: left;
-  background-image: url(https://venturebeat.com/wp-content/uploads/2017/01/Ellen-Pao.jpg?fit=2048%2C1365&strip=all);
-  background-position: 100% 40%;
-  background-size: cover;
-  height: 420px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+header span{
+  font-size: 10px;
+  margin: 35px 0 0 30px;
+}
+header h2{
+  font-size: 30px;
+  font-weight: lighter;
+}
+header i{
+  margin: 0 0 0 30px;
 }
 
-h1 {
-  margin: 275px 0 0 296px;
-  padding: 15px;
-  width: 40%;
+header section section{
+  float: left;
+  width: 20%;
+
+  text-align: center;
+}
+.brand{
+  width: 60%;
+}
+header nav ul{
   background-color: white;
-  opacity: 0.9;
+  text-align: center;
   color: black;
 }
-
-main img {
-  width: 40%;
+header li{
+  margin: 30px 0 0 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  display: inline-block;
 }
-main section + section {
+nav a{
+  color: black;
+}
+h1{
+  padding: 0 20%;
+  font-size: 90px;
+  font-weight: bolder;
+  text-align: center;
+}
+.mainPic img{
+width: 50%;
+margin: 0 25%;
+}
+
+.newsContent{
+  margin: 30px;
+}
+.newsContent section {
+  width: 25%;
   float: left;
-  width: 70%;
+  padding: 20px;
 
-  margin: 3% 15%;
-  padding: 20px 0;
-  display: block;
-  border-bottom: 2px solid rgb(222, 222, 223);
+
+}
+.newsContent section h4{
+  font-size: 20px;
+  padding: 0 0 40px;
+  border-bottom: 3px solid rgb(46,112,97);
+}
+.newsContent section img{
+  width: 100%;
+  
 }
 
-main section + section * {
-  float: left;
+footer *{
+  color: rgb(140,140,129);
+  
+}
+footer{
+  background-color:rgb(33,33,33) ;
+  padding: 30px 0 5px 0;
+  clear: both;
 }
 
-main section + section h3 {
+footer li{
+  font-size: 20px;
   margin: 0 10px;
-  font-size: 28px;
-  width: 40%;
+  display: inline-block;
 }
-.postedTime {
-  width: 40%;
-  margin: 10px;
+footer ul {
+  width: 50%;
+  margin: 0 25%;
+  text-align: center;
+}
+footer h6{
+  margin: 0 0 40px 0;
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
 }
 
-.postedTime * {
-  margin: 0 10px 0 0;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.postedTime time {
-  color: rgb(167, 163, 163);
-}
 
 /******************************************
 /* ADDITIONAL STYLES
