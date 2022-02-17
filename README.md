@@ -1,20 +1,18 @@
 # Learning Web Development
-Practice makes perfect! While learning web development I worked on a lot of fun projects and learned really interesting concepts from every single one of them. Just by recreating different websites and challenging myself.
+Practice makes perfect! While learning web development I worked on a lot of fun projects. I learned really interesting concepts from every single one of them, Just by recreating different websites and challenging myself.
 
-#### Each branch of this repo is a diferent layout.
-
-**You can see some of them live here:** https://davidney.com/webservices
-
-# Learning Web Development
 <a target="_blank" href="https://davidney.com/webservices">
 	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645060879/websites/learn-web-development_ezkjic.jpg"  >
 </a>
 
+### -> Each branch of this repo contains a different layout.
+
+**You can see some of them live here:** https://davidney.com/webservices
 ## How It's Made:
 
 **Tech used:** HTML, CSS
 
-The layouts were built using HTML and CSS in some of them, I used the CSS Layout - float and clear In others I used CSS Flexible Box Layout or a mix of both, this was to learn basic HTML and CSS concepts. while learning I attempted to make some of them elastic and responsive. 
+The layouts were built using HTML and CSS. In some of them, I used the CSS Layout - float and clear In others I used CSS Flexible Box Layout or a mix of both, this was to learn basic HTML and CSS concepts. While learning I attempted to make some of them elastic and responsive. 
 
 ## Lessons Learned:
 
