@@ -2,7 +2,7 @@
 Practice makes perfect! While learning web development I worked on a lot of fun projects. I learned really interesting concepts from every single one of them, Just by recreating different websites and challenging myself.
 
 <a target="_blank" href="https://davidney.com/webservices">
-	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645060879/websites/learn-web-development_ezkjic.jpg"  >
+	<img src="https://res.cloudinary.com/dile8hu1p/image/upload/v1645133253/demo_uyx741.gif"  >
 </a>
 
 ### -> Each branch on this repo contains a different layout.
