@@ -22,213 +22,254 @@
 /*******************************************/
 
 body {
-
+  background: rgb(178, 168, 169);
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* header bacground and navbar */
+/* header and background */
 header{
-  background: url(https://images.squarespace-cdn.com/content/v1/5b5a542bf407b4de009eac2b/1539927738572-ABUYOS8ZRY85PKM3ZCCJ/ke17ZwdGBToddI8pDm48kLvgIuazWRxDGeALQ0yXNL97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0plef_PmwB6-3GP4qDbCUv-NJH_7PgqOJZyXVG2BzskSDTgNNv9DnYL8WSMeU4Ae7A/image-asset.jpeg);
+  border-bottom: 5px solid rgb(178,168,169);
+  border-right: 5px solid rgb(178,168,169);
+  border-radius:100% 0% 39% 100% / 23% 37% 34% 0%  ;
+  transform: skewY(7deg);
+  height: 670px;
+  width: 100%;
+  margin: 0;
+  background: url(https://cdn.discordapp.com/attachments/769332575600640010/782177561764823040/purplehair.jpg);
   background-size: 100% 100%;
-  padding: 0 0 1% 0;
+  background-position: center;
 }
-nav *, .Welcome ul > li a{
-  display: inline-block;
+/* navbar */
+nav,ul {
+  margin:  0;
+  background: white;
+  width: 100%;
+  padding: 1%  ;
+}
+ul *{
+  display: inline;
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 0.7rem;
+  margin: 0 0 0 0.5%;
 }
-nav > ul{
-  float: right;
-  width: 80%;
-  margin: 1%;
-  text-align: right;
+ul > h2{
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0 2% ;
 }
-nav > ul >li  {
-  margin-right: 3%;
+ul img{
+  width: 1.5%;
+  margin: 0 3% -0.1% 0;
 }
-/* title and form */
-.Welcome {
-  width: 50%;
-  font-weight: bold;
-  margin: 10%;
+/* repositioning header content */
+.headercontent{
+  transform: skewY(-7deg);
 }
-.Welcome h1{
-    font-size: 3rem;
-}
-.Welcome form{
-  display: inline-block;
-  background: white;
-  border: 2px solid rgb(218,219,233);
-  border-radius: 5px;
-  color: rgb(195,195,195);
-}
-form > select{
-  margin: 0;
-  background: rgb(255,136,0);
-  color: white;
-  border-style: none;
-  height: 30px;
-}
-form input{
-border-style: none;
-color: rgb(195,195,195);
-}
-.Welcome ul *{
-  display: inline-block;
-  color: rgb(255,136,0);
-  margin: 3% 0;
-}
-.Welcome ul > li,ul{
-  margin: 2% 4% 0 0 ;
-  padding:0;
-}
-
 /* main section */
-main a{
-  color: rgb(255,136,0);
-  text-decoration: none;
+.main{
+  margin: 9% 6% 0 44%;
+  background: white;
+  padding: 0;
+  width: 50%;
+  position: absolute;
+  z-index: 2;
 }
-main h3{
+.title{
+  color: white;
+  font-size: 150%;
+  display: block;
+  width:60%;
+  margin:  10% 0 0 10%;
+  font-size: 1rem;
+}
+.title h2{
+  display: block;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 4rem;
+  margin: 13% 0  2% 0;
+}
+/* black buttons */
+.title button ,.bottom button, #discount10 button{
+  background: black;
+  display: block;
+  color: white;
+  margin: 8% 0;
+  font-size: 0.9rem;
+  height: 30px;
+  width: 180px;
+  border-style: none;
+}
+/* 20% and 10%off discount sections */
+.discount{
+  font-size: 1rem;
+  display: block;
+  background: black;
+  width: 23%;
+  color: white;
+  margin:  -10% 0 0 10%;
+  padding: 2%;
+  line-height: 250%;
+  position: relative;
+}
+.discount h3{
+  border-left: 3px solid white;
+  margin-left: -7%;
+  padding-left: 10%;
+}
+.discount span, .discount10 span{
   font-size: 3rem;
+}
+.discount button{
+  font-size: 0.9rem;
+  height: 30px;
+  width: 150px;
+  border-style: none;
+  margin: 2% 0 6% 0;
+}
+.backgrounddiscount{
+  background: url(https://media.discordapp.net/attachments/769332575600640010/782454025823059997/image_2.jpg);
+  clear: both;
+  background-size: 100% 100%;
+  height: 100%;
+  padding: 3% 0;
+}
+#discount10{
+  padding: 0 10%;
+
+}
+#discount10 h3{
+  font-size: 0.8rem;
+  margin: 10% 0 0 0;
+}
+.backgrounddiscount + h3{
+  text-align: center;
+  font-size: 2rem;
+}
+/* middle section and icons */
+.middle >section {
+display: inline-block;
+width: 25%;
+text-align: center;
+font-size: 0.8rem;
+margin: 10% 3%;
+}
+.middle{
+  padding: 0 10%;
+}
+main section img{
+  width: 30px;
+}
+/* make your momentum section and video */
+#momentum{
+  display: block;
+  width: 50%;
+  float: left;
+}
+.bottom > section + section{
+
+  background: url(https://img.vixdata.io/pd/webp-small/es/sites/default/files/m/mujer-sonriente-con-tupe-en-la-cabeza.jpg);
+  background-size: 80% 80% ;
+  width: 50%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+}
+.bottom img{
+  width: 24%;
+  margin: 25%;
+}
+.bottom{
+  background: rgb(243,244,246);
+  width: 100%;
+  padding: 0 10%;
+}
+.bottom h3{
+  font-size: 1.6rem;
+  display: block;
+}
+/* It was taking as aside due to page was desing to show 2 containers overlapping */
+aside{
+  background: white;
+  width: 50%;
+  margin: 0 0 0 6%;
+  padding: 3% 5%;
+  position: absolute;
+  z-index: 1;
+}
+/* staff pictures and sections */
+.staff > section{
+  width: 33%;
+  display: block;
+  float: left;
+  border-right: 15px solid white;
+  text-align: center;
+  margin: 0;
+}
+.staff img{
+  width: 100%;
+}
+.staff > section >section{
+  background: black;
+  color: white;
+  width: 80%;
+  margin: -8% 0 20% 10%;
+  position: relative;
+  padding: 1% 0;
+}
+.staff h5{
+  margin: 0;
+  font-weight: bold;
+}
+/* our LOOKBOOK end section */
+.clearfix > section{
+  width: 32.5%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.middlelookbook > section img{
+  border-right:  15px solid white;
+  border-left: 15px solid white;
+  width: 100%;
   margin: 0;
   padding: 0;
+  height: 400px;
 }
-main p{
-  text-align: justify;
+.middlelookbook > section + section img {
+  height: 270px;
+  border-top:  15px solid white;
 }
-.discover{
-  background: url(https://images-ext-2.discordapp.net/external/An7aM7-SoXc0sV_4lwB6CAFnyjqrc9peeZnj9p2GaFE/https/i.imgur.com/09m5BSY.jpg);
-  background-size: 100% 100%;
+.side > section img{
+  width: 98%;
+  margin: 0;
+  padding: 0;
+  height: 270px;
 }
-.discover > section{
-  width: 50%;
-  margin: 0 0 0 40%;
-  padding: 5% 0;
-}
-.discover button{
-  background:rgb(255,136,0);
-  border-style: hidden;
-  border-radius: 5px;
-  color: white;
-  height: 40px;
-  width: 30%;
-  margin: 2% 0;
-}
-/* cousine section and pictures */
-.cuisine{
-  background: rgb(242,246,247);
-  text-align: center;
-  padding: 5% 0;
-}
-.cuisine ul *{
-  display: inline-block;
-  color: black;
-  margin: 2% 3%;
-}
-.cuisine > ul{
-  text-align: center;
-  width: 40%;
-  border-bottom: 2px solid gray;
-  margin: 5% 0 5% 30%;
-}
-.cuisine.clearfix section img{
-  border: 5px solid rgb(242,246,247);
+.side > section + section img {
+  border-top:  15px solid white;
   width: 100%;
-  height: 300px;
-  margin: 0;
-}
-.cuisine.clearfix section{
-  width: 24%;
-  display: inline-block;
-}
-/* contact info and video */
-.contact {
-  background: url(https://image.freepik.com/free-photo/top-view-white-office-desk-table-with-coffee-cup-flat-lay_14098-345.jpg);
-  background-size: 100% 105%;
-  text-align: center;
-  padding: 5% 0;
-}
-.contact section *{
-  display: block;
-  margin: 1% 0;
-  font-weight: bold;
-}
-.schedule section {
-  display: inline-block;
-  margin: 0 5%;
-}
-.video > iframe{
-  width :483px;
-  height:362px;
-  margin: 2% 0;
-}
-/* customers reviews */
-.cuisine h3 + a > img{
-  margin: 5% 0 2% 46%;
-  display: block;
-  border: 1px solid rgb(112,126,109);
-  border-radius: 50%;
-  width: 7%;
-  height:90px ;
-}
-.cuisine small, .cuisine h4{
-  margin: 0;
-  font-size: 1.3rem;
-}
-.cuisine p{
-  text-align: center;
-  margin: 4% 10%;
-}
-.cuisine img{
-  width: 7%;
-  display: block;
-  margin: 0 0 0 47%;
+  height: 400px;
 }
 /* Media query */
-@media  (max-width: 650px) {
-  .Welcome {
+@media  (max-width: 1280px) {
+  .main{
+    background: white;
     width: 100%;
-    margin: 0 10%
+    margin: 0;
+    position: relative;
   }
-  nav > ul *{
-    display: block;
-    margin: 1% 0;
+  aside{
+    width: 100%;
+    margin: 0;
   }
-  .discover > section{
-    width: 90%;
-    margin:0;
-    padding: 5% 0;
-  }
-  .cuisine.clearfix section{
-    width: 48%;
-    display: inline-block;
-  }
-  .cuisine > ul{
-    text-align: center;
-    width: 90%;
-    border-bottom: 2px solid gray;
-    margin: 5%;
-}
-.video > iframe{
-  width :250px;
-  height:180px;
-  margin: 2% 0;
-}
-.cuisine h3 + a > img{
-  margin: 5% 0 2% 46%;
-  display: block;
-  border: 1px solid rgb(112,126,109);
-  border-radius: 50%;
-  width: 15%;
-  height:70px ;
-}
-
-
-
 
 /******************************************
 /* ADDITIONAL STYLES
